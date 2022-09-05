@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reducing Arrays</title>
+</head>
+
+<body>
+    <h1>Reducing Arrays</h1>
+    <script>
+        const numbers = [1, -1, 2, 3, 4, 5];
+        // let sum = 0;
+        // for (let n of numbers)
+        //     sum += n;
+
+
+
+        //how its works
+        // accumulator=0,currentValue=1[fist number in array]=>resust=1;
+        // accumulator=1,currentValue=-1[second number in array]=>resust=0;
+        // accumulator=0,currentValue=2[third number in array]=>resust=2;
+        // accumulator=2,currentValue=3[fourth numberin array]=>resust=5;
+        // and so on 
+        // the sum=> 14
+        const sum = numbers.reduce((accumulator, currentValue) => {
+            return accumulator + currentValue;
+        }, 0);
+        console.log(sum);
+    </script>
+</body>
+
+</html>

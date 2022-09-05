@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function landscape</title>
+</head>
+
+<body>
+    <script>
+        let marks = [29, 56, 78, 89.99, 89, 100];
+
+        function giveGrade(marks) {
+            let sum = 0;
+            let average = 0;
+            for (let mark of marks)
+                sum += marks;
+
+            average = sum / marks.length;
+
+            if (average <= 60) return 'F';
+            if (average <= 70) return 'D';
+            if (average <= 80) return 'C';
+            if (average <=
+                90) return 'B';
+            return 'A';
+        }
+        const stud1 = giveGrade(marks);
+        console.log(stud1);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise move elements</title>
+</head>
+
+<body>
+    <h1>Exercise move elements in array</h1>
+    <script>
+        const numbers = [1, 2, 3, 4];
+        const ouput = move(numbers, 0, 3);
+
+        console.log(ouput);
+
+        function move(array, index, offset) {
+            const position = index + offset;
+            if (position >= array.length || position < 0) {
+                console.error('Invalid offset');
+            }
+
+            const ouput = [...array];
+            const element = ouput.splice(index, 1)[0];
+
+            ouput.splice(index + offset, 0, element)
+            return ouput;
+
+        }
+    </script>
+</body>
+
+</html>

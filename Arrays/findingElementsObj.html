@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object finding elements</title>
+    <p>reference types</p>
+</head>
+
+<body>
+    <script>
+        const courses = [{
+            id: 1,
+            name: 'alex'
+        }, {
+            id: 2,
+            name: 'tim'
+        }, ];
+
+        //find
+        const course = courses.find(function(course) {
+            return course.name === 'alex';
+        });
+        console.log(course);
+
+        // findindexOf
+        const course1 = courses.findIndex(function(course) {
+            return course.name === 'alex';
+        });
+        console.log(course1);
+    </script>
+</body>
+
+</html>

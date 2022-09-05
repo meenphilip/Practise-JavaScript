@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function</title>
+</head>
+
+<body>
+    <h1>Factory Function | javascript</h1>
+    <script>
+        function createCircle(radius) {
+            return {
+                radius,
+                draw() {
+                    console.log('draw');
+                }
+            };
+        }
+
+        const circle1 = createCircle(1);
+        console.log(circle1);
+
+        const circle2 = createCircle(10);
+        console.log(circle2);
+    </script>
+</body>
+
+</html>

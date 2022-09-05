@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Elements</title>
+    <h1>Removing Elements from arrays</h1>
+</head>
+
+<body>
+    <script>
+        const numbers = [1, 2, 3, 4];
+        // numbers.push();->add into array at end
+        // numbers.unshift();->add from beginning
+        // numbers.splice();->add into the middle
+
+        // removing from End
+        const last = numbers.pop();
+
+        console.log(last);
+
+        // removing from beginner
+        const first = numbers.shift()
+        console.log(first);
+        console.log(numbers);
+
+
+        //// removing from middle
+        numbers.splice(2, 1);
+        console.log(numbers);
+    </script>
+</body>
+
+</html>

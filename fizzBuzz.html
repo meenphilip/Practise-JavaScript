@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FizzBuzz nput</title>
+  </head>
+
+  <body>
+    <h1>exercise 3</h1>
+    <script>
+      // Divisible by 3 => Fizz
+      // Divisible by 5 => Buzz
+      // Divisible by both 3 and 5 => FizzBuzz;
+      // Not Divisible by 3 or 5 => input
+      // Not a number => 'Not a number'
+      const output = fizzBuzz(1);
+      console.log(output);
+
+      function fizzBuzz(input) {
+        if (typeof input !== "number") return NaN;
+        if (input % 3 === 0 && input % 5 === 0) return "FizzBuzz";
+        if (input % 3 === 0) return "Fizz";
+        if (input % 5 === 0) return "Buzz";
+        return input;
+      }
+    </script>
+  </body>
+</html>

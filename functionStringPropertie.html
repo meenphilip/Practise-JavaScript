@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in Loop</title>
+</head>
+
+<body>
+    <h1>Solved used For in Loop</h1>
+    <script>
+        const movie = {
+            title: 'A',
+            releaseYear: 2018,
+            rating: 4.5,
+            director: 'X'
+        };
+
+        function showProperties(obj) {
+            for (let key in obj)
+                if (typeof obj[key] === 'string')
+                    console.log(key, obj[key]);
+        }
+        showProperties(movie);
+    </script>
+</body>
+
+</html>

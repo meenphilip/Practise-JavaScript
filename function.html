@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h1>functions</h1>
+</body>
+<script>
+    function greeting() {
+        document.writeln("hello world");
+        console.log("Hello world");
+    }
+    greeting();
+    //function with parameters
+    function greeting(name, lastname) {
+        document.writeln(" <br> hello " + name + " " + lastname);
+        console.log("Hello " + name + ' ' + lastname);
+    }
+    greeting('Meen', "tycoon");
+    greeting('Mary', "scolar");
+
+    // calculating a value
+    function calculate(number) {
+        return number * number;
+
+    }
+    let results = calculate(2);
+    console.log(results);
+    //fnction addition
+    function sum(a, b) {
+        return a + b;
+
+    }
+    let answer = sum(12, 12);
+    console.log(answer);
+    document.writeln("<br>" + answer);
+
+
+
+    //more functions
+    function Addition($x, $y) {
+        $results = $x + $y;
+        document.writeln("<br> The addition is" + $results);
+    }
+    Addition(1, 3);
+    Addition(120, 103);
+
+    //Function with a return keyWord;
+
+    function add($p, $q) {
+        $f = $p + $q;
+        return ($f);
+    }
+    $total = add(48, 50);
+    $total1 = add($total, 50);
+
+    document.writeln('<br>' + $total1);
+</script>
+
+</html>

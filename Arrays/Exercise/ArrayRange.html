@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Range</title>
+</head>
+
+<body>
+    <h2>Array Range using Max and Min</h2>
+    <script>
+        function arrayFromRange(min, max) {
+            const output = [];
+            for (let i = min; i <= max; i++)
+                output.push(i);
+            return output;
+        }
+        const numbers = arrayFromRange(-10, -4);
+        console.log(numbers);
+        document.writeln("<br> " + numbers)
+    </script>
+</body>
+
+</html>

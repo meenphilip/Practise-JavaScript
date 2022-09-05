@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum number</title>
+</head>
+
+<body>
+    <h1>Exercise Max</h1>
+    <script>
+        let x = 67;
+        let y = 90;
+        console.log(x);
+        console.log(y);
+        if (x < y) {
+            console.log("x is less than y");
+        } else {
+            console.log("y is greater than x");
+        }
+
+        // using function
+        let number = max(67, 90);
+        console.log(number);
+
+        function max(a, b) {
+            return (a < b) ? a : b;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address object</title>
+</head>
+
+<body>
+    <h1>Address object Exercise with A function</h1>
+    <script>
+        let address = {
+            street: 'Koinange',
+            city: 'Nairobi',
+            zipCode: 12344
+        };
+
+        function showAddress(address) {
+            for (let key in address)
+                console.log(key, address[key]);
+        }
+
+        showAddress(address);
+
+        //FACTFORY FUNCTION
+        document.writeln('Factory function');
+        let address1 = new createAddress('a', 'b', 'c');
+        console.log(address1)
+
+        function createAddress(street, city, zipCode) {
+            return {
+                street,
+                city,
+                zipCode
+            };
+        }
+
+        //constructor function
+        document.writeln('constructor function');
+
+        let Address0 = new Address2('mayen', 'fowzia', 'hafsa')
+        console.log(Address0);
+
+        function Address2(street, city, zipCode) {
+            this.street = street;
+            this.city = city;
+            this.zipCode = zipCode;
+        }
+    </script>
+</body>
+
+</html>

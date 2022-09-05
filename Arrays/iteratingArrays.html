@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration</title>
+</head>
+
+<body>
+    <h1>iterating array using [for of]</h1>
+    <script>
+        const numbers = [1, 4, 5, 6, 7];
+        for (let number of numbers)
+            console.log(number);
+
+        //For Each loop
+        numbers.forEach(function(number1) {
+            console.log(number1);
+        });
+        //using arrow
+        numbers.forEach((index, number1) => console.log(index, number1));
+    </script>
+</body>
+
+</html>

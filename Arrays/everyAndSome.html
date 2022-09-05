@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every & Some</title>
+</head>
+
+<body>
+    <h1>Every & Some | javascript</h1>
+    <script>
+        const numbers = [1, -1, 2, 3, 4, 5];
+        const atLeastAllPositive = numbers.every(function(value) {
+            return value >= 0;
+        });
+
+        // some
+        const atLeastAllPositive1 = numbers.some(function(value) {
+            return value >= 0;
+        })
+        console.log(atLeastAllPositive);
+        console.log(atLeastAllPositive1);
+    </script>
+</body>
+
+</html>

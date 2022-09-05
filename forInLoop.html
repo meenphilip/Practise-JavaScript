@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop</title>
+</head>
+
+<body>
+    <h1>For in Loop</h1>
+    <script>
+        const person = {
+            name: "meen",
+            age: 34
+        };
+        for (let key in person)
+            console.log(key, person[key]);
+
+        const colors = ["red", "black", "blue"];
+        for (let index in colors)
+            console.log(index, colors[index]);
+    </script>
+</body>
+
+</html>

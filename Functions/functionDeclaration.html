@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <h1>Function Declaration V Function Expression</h1>
+    <script>
+        //function declaration
+        function walk() {
+            console.log('walk');
+        }
+        walk();
+
+
+        //function reference
+        const run = function() {
+            console.log('run');
+        };
+        let move = run;
+        move();
+        run();
+    </script>
+</body>
+
+</html>

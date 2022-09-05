@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function-Default parameters</title>
+</head>
+
+<body>
+    <h1>Function-Default parameters</h1>
+    <script>
+        function interest(principle, rate, years) {
+            return principle * rate * years;
+        }
+        console.log(interest(10000, 3.5, 5));
+
+        // another way using default values
+        function interest(principle, rate, years) {
+            rate = rate || 3.5;
+            years = years || 5;
+            return principle * rate * years;
+        }
+        console.log('The second way ' + interest(10000));
+
+        //ES6 way
+        function interest(principle, rate = 3.5, years = 5) {
+            return principle * rate * years;
+        }
+        console.log('The ES6 way ' + interest(10000));
+    </script>
+</body>
+
+</html>

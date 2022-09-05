@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+
+<body>
+    <h1>Error Handling | javasript</h1>
+    <script>
+        const person = {
+            firstName: 'Meen',
+            lastName: 'Madhang',
+            set fullName(value) {
+                if (typeof value !== 'string')
+                    throw new Error('Value is not a string');
+
+                const parts = value.split(' ');
+                if (parts.length !== 2)
+                    throw new Error('Enter First and Last name.');
+                this.firstName = parts[0];
+                this.lastName = parts[1];
+
+            }
+        };
+        try {
+            person.fullName = '';
+        } catch (e) {
+            alert(e);
+        }
+
+        console.log(person);
+    </script>
+</body>
+
+</html>
